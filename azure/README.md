@@ -1,11 +1,13 @@
--- Delete resource group e todos recursos dele
+# Azure Cloud Shell
+
+## Delete resource group e todos recursos dele
 az group delete --name rodrigo.ceschi_rg_9250 --no-wait
 
--- Subir webapp html (estático)
+## Subir webapp html (estático)
 az webapp up --location eastus --name rascAzureApp --html
 
---Listar webapps
+## Listar webapps
 az webapp list
 
---Monitorar logs de webapps
+## Monitorar logs de webapps
 az webapp log tail --name appname --resource-group myResourceGroup
